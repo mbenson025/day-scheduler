@@ -1,25 +1,32 @@
 //global variables
 var now = moment();
 
-
 //current day and time
 $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
 
-// var hour = ['9', '10', '11', '12', '1', '2', '3', '4', '5'];
 
 
-//functions
+
+
+
+
+
+
+
 
 //return from storage
-function getSchedule() {
-  // localStorage.getItem(k);
-  // $(this)
-}
+  var a = $("#time1 .description").val(localStorage.getItem("9"));
+  var b = $("#time2 .description").val(localStorage.getItem("10"));
+  var c = $("#time3 .description").val(localStorage.getItem("11"));
+  var d = $("#time4 .description").val(localStorage.getItem("12"));
+  var e = $("#time5 .description").val(localStorage.getItem("13"));
+  var f = $("#time6 .description").val(localStorage.getItem("14"));
+  var g =  $("#time7 .description").val(localStorage.getItem("15"));
+  var h = $("#time8 .description").val(localStorage.getItem("16"));
+  var i = $("#time9 .description").val(localStorage.getItem("17"));
 
 
-// $('.description').val(localStorage.description);
-
-$('button').on('click', saveSchedule);
+$('button').on('click', setSchedule);
 //icon change
 function setSchedule(e) {
   $(this).find('.fa').removeClass('fa-folder-plus').addClass('fa-check');
@@ -29,13 +36,14 @@ function setSchedule(e) {
   }, 500);
     
     //save input to localStorage (key + value)
-    let k = $(this).parent().children('textarea').attr('id');
+    let k = $(this).parent().children('textarea').attr('id'); //The whole family is here
     let v = $(this).parent().children('.description').val();
 
-
     localStorage.setItem(k, v);
-  
-}
+
+  }
+
+
 
 
 
