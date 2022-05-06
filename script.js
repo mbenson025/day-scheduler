@@ -5,10 +5,29 @@ var now = moment();
 $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
 
 
+timeColor();
 
 
+function timeColor () {
+  var currentTime = now.hour();
+  // console.log(currentTime);
+  var hourRows = $('.description');
+  var saveBtn = $('.saveBtn');
+  // var hourRows = $('.description')[0].id;
+  // var parseRows = parseInt(hourRows);  
+  // console.log(parseRows) --------------------parsed for number grab on the id!!
+  var hourRowsId = $('.description').id;
+  var parseRows = parseInt(hourRowsId);
+  // var colorizedRow = $(hourRows).siblings().addClass('present');---.siblings targets the text boxes to change color!
+  console.log(parseRows);
 
+    for (i=0; i < hourRows.length; i++) {
 
+      if (parseInt(hourRows[i].id) < currentTime) {
+        $(hourRows).addClass('past');
+      }
+    }
+}
 
 
 
@@ -21,7 +40,7 @@ $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
   var d = $("#time4 .description").val(localStorage.getItem("12"));
   var e = $("#time5 .description").val(localStorage.getItem("13"));
   var f = $("#time6 .description").val(localStorage.getItem("14"));
-  var g =  $("#time7 .description").val(localStorage.getItem("15"));
+  var g = $("#time7 .description").val(localStorage.getItem("15"));
   var h = $("#time8 .description").val(localStorage.getItem("16"));
   var i = $("#time9 .description").val(localStorage.getItem("17"));
 
@@ -40,7 +59,7 @@ function setSchedule(e) {
     let v = $(this).parent().children('.description').val();
 
     localStorage.setItem(k, v);
-
+  
   }
 
 
