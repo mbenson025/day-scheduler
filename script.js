@@ -4,6 +4,7 @@ var now = moment();
 //current day and time
 $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
 
+$(".jumbotron").append('<button class="darkBtn" style="float: left; background-color:black; color: white">Dark Mode</button>');
 
 
 function timeColor () {
@@ -66,4 +67,11 @@ var clearBtn = $(".clearBtn");
 clearBtn.on("click", function() {
     localStorage.clear();
     location.reload();
+});
+
+//dark mode
+var darkBtn = $(".darkBtn");
+darkBtn.on("click", function() {
+    $('body').toggleClass('dark');
+    $('.jumbotron').toggleClass('dark');
 });
