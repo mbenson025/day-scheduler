@@ -28,7 +28,7 @@ function timeColor () {
       if (parseInt(hourRows[i].id) === currentTime) {
         $(hourRows).addClass('present');
       }
-      if (parseInt(hourRows[i].id) === currentTime) {
+      if (parseInt(hourRows[i].id) > currentTime) {
         $(hourRows).addClass('future');
     }
   }
