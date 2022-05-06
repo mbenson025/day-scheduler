@@ -5,45 +5,40 @@ var now = moment();
 $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
 
 
-timeColor();
-
 
 function timeColor () {
-  var currentTime = now.hour();
-  console.log(currentTime);
+  // var currentTime = now.hour();
+  // console.log(currentTime);
+  var currentTime = 12;
   var hourRows = $('.description');
-  // var hourRows = $('.description')[0].id;
-  // var parseRows = parseInt(hourRows);  
-  // console.log(parseRows) --------------------parsed for number grab on the id!!
-  var hourRowsId = $('.description').id;
-  var parseRows = parseInt(hourRowsId);
-  // var colorizedRow = $(hourRows).siblings().addClass('present');---.siblings targets the text boxes to change color!
-  console.log(parseRows);
+  console.log(hourRows.length);
 
     for (i=0; i < hourRows.length; i++) {
 
       if (parseInt(hourRows[i].id) < currentTime) {
-        $(hourRows).addClass('past');
+        $(hourRows[i]).addClass('past');
       }
       if (parseInt(hourRows[i].id) === currentTime) {
-        $(hourRows).addClass('present');
+        $(hourRows[i]).addClass('present');
       }
       if (parseInt(hourRows[i].id) > currentTime) {
-        $(hourRows).addClass('future');
+        $(hourRows[i]).addClass('future');
     }
   }
 }
 
+timeColor();
+
 //return from storage
-  var a = $("#time1 .description").val(localStorage.getItem("9"));
-  var b = $("#time2 .description").val(localStorage.getItem("10"));
-  var c = $("#time3 .description").val(localStorage.getItem("11"));
-  var d = $("#time4 .description").val(localStorage.getItem("12"));
-  var e = $("#time5 .description").val(localStorage.getItem("13"));
-  var f = $("#time6 .description").val(localStorage.getItem("14"));
-  var g = $("#time7 .description").val(localStorage.getItem("15"));
-  var h = $("#time8 .description").val(localStorage.getItem("16"));
-  var i = $("#time9 .description").val(localStorage.getItem("17"));
+  $("#time1 .description").val(localStorage.getItem("9"));
+  $("#time2 .description").val(localStorage.getItem("10"));
+  $("#time3 .description").val(localStorage.getItem("11"));
+  $("#time4 .description").val(localStorage.getItem("12"));
+  $("#time5 .description").val(localStorage.getItem("13"));
+  $("#time6 .description").val(localStorage.getItem("14"));
+  $("#time7 .description").val(localStorage.getItem("15"));
+  $("#time8 .description").val(localStorage.getItem("16"));
+  $("#time9 .description").val(localStorage.getItem("17"));
 
 
 $('button').on('click', setSchedule);
@@ -60,14 +55,16 @@ function setSchedule(e) {
     let v = $(this).parent().children('.description').val();
 
     localStorage.setItem(k, v);
-  
   }
-
-
-
-
 
 //toggle function alternate-
 // function iconSwitch(e) {
 //   $(this).find('.fa').toggleClass('fa-folder-plus fa-check');
 // }
+
+//clear button
+var clearBtn = $(".clearBtn");
+clearBtn.on("click", function() {
+    localStorage.clear();
+    location.reload();
+});

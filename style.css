@@ -76,3 +76,12 @@ textarea {
   transition: all 0.1s ease-in-out;
   opacity: 0.9;
 }
+
+.clearBtn {
+  float: right;
+  background-color: #f6f6f6;
+}
+
+.clearBtn:hover {
+  opacity: 0.8;
+}

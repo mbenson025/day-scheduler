@@ -4,10 +4,11 @@
 
 <a href="https://mbenson025.github.io/day-scheduler/">Day Scheduler</a>
 
-Credits:
+##
 
-<!-- jquery was a much easier solution than this -->
-<!-- Event Listener for changing an icon: https://stackoverflow.com/questions/45494301/changing-font-awesome-icon-onclick-function -->
+![dayscheduler](https://user-images.githubusercontent.com/35643709/167069000-f08cf6a8-accb-4f9b-87af-6bd3c59061dd.JPG)
+
+Credits:
 
 jquery for changing icon:
 https://stackoverflow.com/questions/15707194/changing-button-icon-upon-onclick-when-using-javascript-bootstrap
