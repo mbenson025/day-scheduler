@@ -10,9 +10,8 @@ timeColor();
 
 function timeColor () {
   var currentTime = now.hour();
-  // console.log(currentTime);
+  console.log(currentTime);
   var hourRows = $('.description');
-  var saveBtn = $('.saveBtn');
   // var hourRows = $('.description')[0].id;
   // var parseRows = parseInt(hourRows);  
   // console.log(parseRows) --------------------parsed for number grab on the id!!
@@ -26,12 +25,14 @@ function timeColor () {
       if (parseInt(hourRows[i].id) < currentTime) {
         $(hourRows).addClass('past');
       }
+      if (parseInt(hourRows[i].id) === currentTime) {
+        $(hourRows).addClass('present');
+      }
+      if (parseInt(hourRows[i].id) === currentTime) {
+        $(hourRows).addClass('future');
     }
+  }
 }
-
-
-
-
 
 //return from storage
   var a = $("#time1 .description").val(localStorage.getItem("9"));
