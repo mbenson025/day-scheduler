@@ -7,9 +7,8 @@ $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
 
 
 function timeColor () {
-  // var currentTime = now.hour();
+  var currentTime = now.hour();
   // console.log(currentTime);
-  var currentTime = 12;
   var hourRows = $('.description');
   console.log(hourRows.length);
 
