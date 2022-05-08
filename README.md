@@ -1,14 +1,28 @@
 <h1> Day Scheduler </h1>
 
-## Link
+## Link:
 
-<a href="https://mbenson025.github.io/day-scheduler/">Day Scheduler</a>
+<h2><a href="https://mbenson025.github.io/day-scheduler/">Day Scheduler</a></h2>
 
-##
+<br>
 
-![dayscheduler](https://user-images.githubusercontent.com/35643709/167069000-f08cf6a8-accb-4f9b-87af-6bd3c59061dd.JPG)
+## Instructions:
 
-Credits:
+<br>
+Download/clone repository or click link above
+
+- Type entries for daily activities in time slots accordingly
+- Click the save icon on the right of each row to save your schedule
+- Clear button erases all entries
+- Dark mode switches to alternate color scheme
+
+<br>
+
+## Screenshot of deployed app:
+
+![dayplannerscreenshot](https://user-images.githubusercontent.com/35643709/167313368-c8a3ebb1-2a79-4ce6-b0ec-8c412321c2c1.JPG)
+
+## Credits:
 
 jquery for changing icon:
 https://stackoverflow.com/questions/15707194/changing-button-icon-upon-onclick-when-using-javascript-bootstrap
