@@ -9,7 +9,10 @@
 ## Instructions:
 
 <br>
+
 Download/clone repository or click link above
+
+<br>
 
 - Type entries for daily activities in time slots accordingly
 - Click the save icon on the right of each row to save your schedule
