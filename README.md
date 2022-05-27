@@ -6,6 +6,18 @@
 
 <br>
 
+## About
+
+This application is designed to resemble a typical work day in which the user is able to plan and schedule activities. Each row represents an hour from 9am to 5pm and is accompanied by a save button that uses localStorage to maintain the user's notes.
+
+<br>
+
+## Technologies used:
+
+Moment.js and jQuery. Languages used: HTML5, CSS, JavaScript
+
+<br>
+
 ## Instructions:
 
 <br>
@@ -23,15 +35,40 @@ Download/clone repository or click link above
 
 ## Screenshot of deployed app:
 
-![dayplannerscreenshot](https://user-images.githubusercontent.com/35643709/167313368-c8a3ebb1-2a79-4ce6-b0ec-8c412321c2c1.JPG)
+<br>
 
-## Credits:
+<img src="assets/img/dayschedulerss.jpg" alt="title page" title="Search Screen">
 
-jquery for changing icon:
-https://stackoverflow.com/questions/15707194/changing-button-icon-upon-onclick-when-using-javascript-bootstrap
+<br>
+<br>
+<br>
 
-Row/column sizing assist(col md-1/col-md-10):
-askBCS support session 147110
+## Live Demo:
 
-localStorage key and value:
-https://stackoverflow.com/questions/40791207/setting-and-getting-localstorage-with-jquery
+<br>
+
+<img src="assets/img/dayscheduler.gif" alt="gif of app demonstration" title="App Demo">
+
+<br>
+<br>
+<br>
+
+## Contact:
+
+<br>
+
+Mason Benson - mbenson025@gmail.com
+
+GitHub Profile - https://github.com/mbenson025
+
+<br>
+
+## License:
+
+<br>
+
+MIT License
+
+Copyright (c) 2022 Mason Benson
+
+Licensed under the [MIT](LICENSE) license.
